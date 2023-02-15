@@ -1,10 +1,10 @@
 {
-    "name": "huynp/kiotviet",
+    "name": "hnp/kiotviet",
     "description": "A package for Kiotviet",
-    "version": "v0.0.2",
+    "version": "v0.0.5",
     "license": "MIT",
     "require": {
-        "guzzlehttp/guzzle": "^7.5"
+        "guzzlehttp/guzzle": "6.5.2"
     },
     "autoload": {
         "psr-4": {
@@ -16,5 +16,8 @@
             "name": "Huy Nguyen",
             "email": "huynp.dev@gmail.com"
         }
-    ]
+    ],
+    "config": {
+        "platform-check": false
+    }
 }

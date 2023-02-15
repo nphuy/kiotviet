@@ -4,10 +4,10 @@ use GuzzleHttp\Client as Request;
 use Huynp\Kiotviet\Client;
 
 class Category{
-    private Client $client;
-    private array $headers;
+    private $client;
+    private $headers;
 
-    function __construct(Client $client) {
+    function __construct($client) {
         $this->client = $client;
         $this->headers = [
             'Retailer' => $client->getRetailerCode(),
