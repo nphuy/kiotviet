@@ -19,6 +19,7 @@ class Product{
         $client = new Request([
             'base_uri' => 'http://httpbin.org',
             'timeout'  => 20.0,
+            'verify' => false
         ]);
         
         $response = $client->request('GET', $url, [
