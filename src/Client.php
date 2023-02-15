@@ -3,9 +3,9 @@ namespace Huynp\Kiotviet;
 use GuzzleHttp\Client as Request;
 
 class Client{
-    private string $client_id, $client_secret, $token, $retailerCode;
+    private $client_id, $client_secret, $token, $retailerCode;
 
-    function __construct(string $client_id, string $client_secret) {
+    function __construct($client_id, $client_secret) {
         $this->client_id = $client_id;
         $this->client_secret = $client_secret;
         $this->token = $this->getToken();
